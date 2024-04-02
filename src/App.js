@@ -1,4 +1,5 @@
 import MenuBase from './components/menu.js';
+import Home from './components/home.js';
 
 function App() {
   return (
@@ -6,9 +7,9 @@ function App() {
       {/* Menu Lateral */}
       <MenuBase />
       <div class="h-[100vh] w-[100vw]">
-        <div className="relative -z-50 flex flex-col pl-32 items-start justify-start h-[80vh] w-full bg-[var(--blue-bg)]">
+        <div className="relative flex flex-col pl-32 items-start justify-start h-[80vh] w-full bg-[var(--blue-bg)]">
           {/* Menu Header */}
-          <nav className="ml-32 px-10 w-2/3 h-6 flex justify-between my-5">
+          <nav id="nav-main" className="ml-32 px-10 w-2/3 h-6 flex justify-between my-5">
             <div className="pb-3 w-20 text-center">
               <a href="/">SERVIÇOS</a>
             </div>
@@ -20,9 +21,9 @@ function App() {
             </div>
           </nav>
           {/* Conteudos */}
-          <main className='absolute mt-20 ml-10 bg-black h-[75vh] w-[80vw]'>
-            <section id="home">
-
+          <main className='absolute mt-24 ml-10 h-[75vh] w-[80vw]'>
+            <section id="home" className='h-full w-full relative'>
+              <Home />
             </section>
           </main>
         </div>
