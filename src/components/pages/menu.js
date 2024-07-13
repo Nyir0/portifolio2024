@@ -6,7 +6,9 @@ export default function MenuBase(){
                 <img className="absolute right-3 bottom-3" src="./img/vetores/vetor_menu_bot.png" alt="" width={100}/>
                 <ul className="h-full flex flex-col justify-around items-center">
                     <li className="z-10">
-                        <img className="max-w-14 cursor-pointer" src="./img/icons/menu-home.png" alt="" width={60}/>
+                        <a href="/">
+                            <img className="max-w-14 cursor-pointer" src="./img/icons/menu-home.png" alt="" width={60}/>
+                        </a>
                     </li>
                     <li className="z-10">
                         <img className="max-w-16 cursor-pointer" src="./img/icons/menu-list.png" alt="" width={80}/>

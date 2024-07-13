@@ -1,5 +1,6 @@
-import MenuBase from './components/menu.js';
-import Home from './components/home.js';
+import MenuBase from './components/pages/menu.js';
+import Home from './components/pages/home.js';
+import Routes from './Routes.js';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
               <a href="/">SERVIÇOS</a>
             </div>
             <div className="pb-3 w-20 text-center">
-              <a href="/">CONTATOS</a>
+              <a href="/contatos">CONTATOS</a>
             </div>
             <div className="pb-3 w-28 text-center">
               <a href="/">OBSERVAÇÕES</a>
@@ -23,7 +24,7 @@ function App() {
           {/* Conteudos */}
           <main className='absolute mt-24 ml-10 h-[75vh] w-[80vw]'>
             <section id="home" className='h-full w-full relative'>
-              <Home />
+              <Routes />
             </section>
           </main>
         </div>
