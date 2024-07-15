@@ -12,13 +12,13 @@ function App() {
           {/* Menu Header */}
           <nav id="nav-main" className="ml-32 px-10 w-2/3 h-6 flex justify-between my-5">
             <div className="pb-3 w-20 text-center">
-              <a href="/">SERVIÇOS</a>
+              <a href="/servicos">SERVIÇOS</a>
             </div>
             <div className="pb-3 w-20 text-center">
               <a href="/contatos">CONTATOS</a>
             </div>
             <div className="pb-3 w-28 text-center">
-              <a href="/">OBSERVAÇÕES</a>
+              <a href="/observacoes">OBSERVAÇÕES</a>
             </div>
           </nav>
           {/* Conteudos */}
